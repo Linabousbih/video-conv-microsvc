@@ -14,7 +14,7 @@ server.config["MYSQL_DB"]=os.environ.get("MYSQL_DB ")
 server.config["MYSQL_PORT"]=os.environ.get("MYSQL_PORT ")
 
 
-@server.route("/login",methods=["POST"])
+@server.route("/login",method=["POST"])
 def login():
     auth=request.authorization
     if not auth:
